@@ -1,0 +1,212 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+}
+
+/* Fondo y layout general */
+body {
+    background: linear-gradient(135deg, #4a90e2, #4E79E2, #357ABD);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Contenedores principales */
+.index-container,
+.login-container {
+    background: #fff;
+    padding: 50px 75px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+
+/* Títulos */
+.title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1e2a78;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+/* Contenedor de cards (para login y registro general) */
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tarjetas individuales */
+.card {
+    background: #f9f9f9;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(53, 122, 189, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(53, 122, 189, 0.3);
+}
+
+.card h2 {
+    color: #357ABD;
+    margin-bottom: 8px auto;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 15px auto;
+}
+
+/* Botones */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+}
+
+.btn-primary {
+    background-color: #357ABD;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #265a9e;
+    transform: scale(1.02);
+}
+
+.btn-secondary {
+    background-color: #78a4ff;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #4d75d6;
+    transform: scale(1.02);
+}
+
+/* Botones en bloque */
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+/* Formulario */
+.login-box {
+    text-align: left;
+}
+
+.login-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    color: #1e2a78;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.25s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #357ABD;
+    background-color: #f0f7ff;
+}
+
+/* Botón submit */
+.login-form button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #357ABD;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #265a9e;
+}
+
+/* Textos de ayuda */
+.help-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.help-text .link {
+    color: #357ABD;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.help-text .link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #888;
+    text-align: center;
+}
+
+
+/* Responsive */
+@media (min-width: 600px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .card:first-child {
+        margin-left: 0;
+    }
+
+    .card:last-child {
+        margin-right: 0;
+    }
+}

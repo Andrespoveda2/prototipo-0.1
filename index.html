@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-    <link rel="icon" href="images/icon.png" type="icon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OASIS - Plataforma de Gestión</title>
+    <link rel="icon" href="images/icon.png" type="image/png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+
 <body>
 
-    <!-- Header con botón de login -->
-    <header>
-        <div>
-            <!-- Aquí irá el logo o nombre del sitio si se desea -->
+    <!-- Sección de bienvenida -->
+    <main class="index-container">
+        <h1 class="title">Bienvenido a OASIS</h1>
+        <p class="subtitle">Selecciona tu tipo de usuario para iniciar sesión o registrarte.</p>
+
+        <div class="card-container">
+            <!-- Empresas -->
+            <section class="card">
+                <h2>Empresas</h2>
+                <p>Gestiona tus proyectos, ofertas y contactos.</p>
+                <a href="login_empresa.html" class="btn-primary btn-block">Iniciar Sesión</a>
+                <a href="registro_empresa.html" class="btn-secondary btn-block">Registrarse</a>
+            </section>
+
+            <!-- Estudiantes -->
+            <section class="card">
+                <h2>Estudiantes</h2>
+                <p>Accede a cursos, actividades y tu perfil académico.</p>
+                <a href="login_estudiante.html" class="btn-primary btn-block">Iniciar Sesión</a>
+                <a href="registro_estudiante.html" class="btn-secondary btn-block">Registrarse</a>
+            </section>
+
+            <!-- Instructores -->
+            <section class="card">
+                <h2>Instructores</h2>
+                <p>Administra tus clases y materiales educativos.</p>
+                <a href="login_instructor.html" class="btn-primary btn-block">Iniciar Sesión</a>
+                <a href="registro_instructor.html" class="btn-secondary btn-block">Registrarse</a>
+            </section>
         </div>
-        <div style="text-align: right;">
-            <a href="login/login.html">
-                <button>Iniciar sesión</button>
-            </a>
 
-            <a href="/register/registro.html">
-                <button>Registro</button>
-            </a>
-        </div>
-    </header>
+        <!-- Secciones informativas -->
+        <section id="que-es">
+            <h2>¿Qué es?</h2>
+            <p>
+                Esta plataforma conecta empresas reales con aprendices del SENA.
+                Las empresas pueden publicar proyectos, y los aprendices pueden postularse para trabajar en ellos,
+                con la supervisión básica de un instructor.
+            </p>
+        </section>
 
-    <!-- Navegación por anclas -->
-    <nav>
-        <ul>
-            <li><a href="#que-es">¿Qué es?</a></li>
-            <li><a href="#como-funciona">¿Cómo funciona?</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+        <section id="como-funciona">
+            <h2>¿Cómo funciona?</h2>
+            <ol>
+                <ul>La empresa se registra y publica un proyecto.</ul>
+                <ul>Los aprendices registrados pueden ver los proyectos y postularse.</ul>
+                <ul>La empresa revisa las postulaciones y selecciona a los aprendices.</ul>
+                <ul>El instructor vinculado está informado de los proyectos de sus aprendices.</ul>
+            </ol>
+        </section>
 
-    <!-- Sección: ¿Qué es? -->
-    <section id="que-es">
-        <h2>¿Qué es?</h2>
-        <p>
-            Esta plataforma conecta empresas reales con aprendices del SENA.
-            Las empresas pueden publicar proyectos, y los aprendices pueden postularse para trabajar en ellos,
-            con la supervisión básica de un instructor.
-        </p>
-    </section>
-
-    <!-- Sección: ¿Cómo funciona? -->
-    <section id="como-funciona">
-        <h2>¿Cómo funciona?</h2>
-        <ol>
-            <li>La empresa se registra y publica un proyecto.</li>
-            <li>Los aprendices registrados pueden ver los proyectos y postularse.</li>
-            <li>La empresa revisa las postulaciones y selecciona a los aprendices.</li>
-            <li>El instructor vinculado está informado de los proyectos de sus aprendices.</li>
-        </ol>
-    </section>
-
-    <!-- Sección: Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>
-            Para más información, dudas o soporte, escríbenos a:
-            <br>
-            <strong>Email:</strong> contacto@ejemplo.com
-        </p>
-    </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                Para más información, dudas o soporte, escríbenos a:
+                <br />
+                <strong>Email:</strong> contacto@ejemplo.com
+            </p>
+        </section>
+    </main>
 
 </body>
-</html>
 
+</html>
